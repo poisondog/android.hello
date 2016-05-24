@@ -1,3 +1,6 @@
+project.group = 'poisondog'
+project.version = '1.0.0'
+
 buildscript {
 	repositories {
 		mavenCentral()
@@ -9,8 +12,15 @@ buildscript {
 apply plugin: 'android'
 
 android {
-	compileSdkVersion 'Google Inc.:Google APIs:14'
+	compileSdkVersion 'Google Inc.:Google APIs:23'
 	buildToolsVersion '23.0.2'
+	defaultConfig {
+		versionCode 1
+		versionName project.version
+		minSdkVersion 14
+		targetSdkVersion 17
+		multiDexEnabled = true
+	}
 
 	buildTypes {
 		release {
