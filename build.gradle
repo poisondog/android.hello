@@ -3,16 +3,16 @@ project.version = '1.0.0'
 
 buildscript {
 	repositories {
-		mavenCentral()
+		jcenter()
 	}
 	dependencies {
-		classpath 'com.android.tools.build:gradle:1.5.0'
+		classpath 'com.android.tools.build:gradle:2.2.1'
 	}
 }
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 android {
-	compileSdkVersion 'Google Inc.:Google APIs:23'
+	compileSdkVersion 24
 	buildToolsVersion '23.0.2'
 	defaultConfig {
 		versionCode 1
@@ -29,3 +29,8 @@ android {
 		}
 	}
 }
+
+dependencies {
+	compile project(':library')
+}
+
