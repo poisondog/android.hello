@@ -13,13 +13,13 @@ apply plugin: 'com.android.application'
 
 android {
 	compileSdkVersion 24
-	buildToolsVersion '23.0.2'
+	buildToolsVersion '25.0.2'
 	defaultConfig {
 		versionCode 1
 		versionName project.version
 		minSdkVersion 14
 		targetSdkVersion 17
-		multiDexEnabled = true
+		multiDexEnabled true
 	}
 
 	buildTypes {
