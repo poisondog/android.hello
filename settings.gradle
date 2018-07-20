@@ -16,6 +16,3 @@ include 'shared'
 include 'api'
 */
 
-include ':library'
-project(':library').projectDir = file('../start.android.library/')
-
